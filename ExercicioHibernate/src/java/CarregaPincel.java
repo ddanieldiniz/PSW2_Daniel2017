@@ -11,13 +11,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
 
 /**
  *
  * @author RA21550389
  */
-public class SalvarPincel extends HttpServlet {
+public class CarregaPincel extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,38 +31,21 @@ public class SalvarPincel extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            int idPincel = 0;
             
-            Pincel p1 = new Pincel();
-            p1.setCor("azul");
-            p1.setFabricante("pilot");
-            p1.setNum_serie(10254);
+            
+            Pincel pincel0;
             
             Session sessao = HibernateUtil
                     .getSessionFactory()
                     .openSession();
+            pincel0 = (Pincel) sessao.get(Pincel.class, idPincel);
             
-            Transaction tx = sessao.beginTransaction();
-            
-            sessao.save(p1);
-            sessao.flush();
-            
-            tx.commit();
-            
-            sessao.close();
-            
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet SalvarPincel</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet SalvarPincel at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-            
-            
-            
+            out.println("Dados do pincel 0:");
+            out.println("cor" + pincel0.getCor());
+            out.println("fabricante: " + pincel0.getFabricante());
+            out.println("num_serie" + pincel0.getNum_serie());
         }
     }
 

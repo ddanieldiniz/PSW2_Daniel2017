@@ -16,7 +16,7 @@ import javax.persistence.Id;
 @Entity
 public class Pincel {
     private String cor;
-    private String fabriante;
+    private String fabricante;
     @Id
     private int num_serie;
 
@@ -28,12 +28,12 @@ public class Pincel {
         this.cor = cor;
     }
 
-    public String getFabriante() {
-        return fabriante;
+    public String getFabricante() {
+        return fabricante;
     }
 
-    public void setFabriante(String fabriante) {
-        this.fabriante = fabriante;
+    public void setFabricante(String fabriante) {
+        this.fabricante = fabriante;
     }
 
     public int getNum_serie() {
