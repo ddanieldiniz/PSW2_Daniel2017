@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [21/Mar/2017:22:13:04 -0300] "GET /SalvarPincel?cor=azul&fab=tic&num=2454646 HTTP/1.1" 200 32 http-bio-8080-exec-1 855
+0:0:0:0:0:0:0:1 - - [21/Mar/2017:22:14:54 -0300] "GET /SalvarPincel?cor=preto&fab=lac&num=21212121 HTTP/1.1" 200 32 http-bio-8080-exec-4 16
+0:0:0:0:0:0:0:1 - - [21/Mar/2017:22:15:38 -0300] "GET /ConsultaPincel?cor=preto HTTP/1.1" 200 298 http-bio-8080-exec-5 25
+0:0:0:0:0:0:0:1 - - [21/Mar/2017:22:15:53 -0300] "GET /ConsultaPincel?cor=prata HTTP/1.1" 200 31 http-bio-8080-exec-6 3
+0:0:0:0:0:0:0:1 - - [21/Mar/2017:22:16:26 -0300] "GET /SalvarPincel?cor=dipirona+ardente&fab=lacloc&num=025145487 HTTP/1.1" 200 32 http-bio-8080-exec-7 18
+0:0:0:0:0:0:0:1 - - [21/Mar/2017:22:16:35 -0300] "GET /ConsultaPincel?cor=dipirona+ardente HTTP/1.1" 200 89 http-bio-8080-exec-9 3
+0:0:0:0:0:0:0:1 - - [21/Mar/2017:22:18:55 -0300] "GET /SalvarPincel?cor=red&fab=batata&num=999999 HTTP/1.1" 200 32 http-bio-8080-exec-4 17
+0:0:0:0:0:0:0:1 - - [21/Mar/2017:22:19:01 -0300] "GET /ConsultaPincel?cor=red HTTP/1.1" 200 74 http-bio-8080-exec-4 3
